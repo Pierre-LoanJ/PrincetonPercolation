@@ -6,18 +6,18 @@ public class ResizingArrayStackOfStrings {
 		t = new String[n];
 	}
 	
-	public boolean isEmpty() { return this.pos == 0; }
-	
 	public boolean isFull(String[] tab) { return pos == tab.length; }
 	
 	public String[] resize() {
 	  int n = t.length;
 	  String[] tResized = new String [ 2 * n ];
 	  for (i = 0; i < n; i++) {
-	    tResized[i] = t[i];
+	  	tResized[i] = t[i];
+	    }
 	    return tResized;
-	  }
 	}
+	
+	public boolean isEmpty() { return this.pos == 0; }
 	
 	public void push(String item) {
 	  if (this.isFull(t)) t = resize(t);
@@ -29,10 +29,6 @@ public class ResizingArrayStackOfStrings {
 		pos--;
 		return val;
 	}
-	
-	
-	
-	
 	
 	public static void main(String[] args) {
 	  }
