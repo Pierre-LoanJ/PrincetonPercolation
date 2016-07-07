@@ -18,7 +18,7 @@ public class LinkedQueueGeneric<Type> {
 	}
 	
 	public Type dequeue(){
-		if (this.isEmpty()) {
+		if (isEmpty()) {
 			last = null;
 		}
 		Type val = first.item;
