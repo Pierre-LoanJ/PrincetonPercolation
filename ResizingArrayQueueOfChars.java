@@ -4,10 +4,19 @@ public class ResizingArrayQueueOfChars {
   public ResizingArrayQueueOfChars(int n) {
     char[] a = new [n]; 
   }
-  public static void isEmpty() {
+  public String[] resize(char[] t) {
+		int n = t.length;
+		char[] tResized = new char [ 2 * n ];
+		for (int i = 0; i < n; i++) {
+	  		tResized[i] = t[i];
+		}
+		return tResized;
+  }
+  public static boolean isEmpty() {
     return a[first] == null;
   }
   public void enQueue(char c) {
+    if (a.length >= last) a = resize(a);
     a[last] = c;
     last++;
   }
