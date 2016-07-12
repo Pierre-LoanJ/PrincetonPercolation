@@ -29,7 +29,6 @@ public class ResizingArrayStackofStrings {
 		return val;
 	}
 	
-	
 	public static void main(String[] args) {
 		ResizingArrayStackofStrings stack = new ResizingArrayStackofStrings(3);
 		System.out.println(stack.t.length);
