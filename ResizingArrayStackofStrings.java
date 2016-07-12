@@ -25,8 +25,7 @@ public class ResizingArrayStackofStrings {
 	}
 	
 	public String pop() {
-		String val = t[pos];
-		pos--;
+		String val = t[--pos];
 		return val;
 	}
 	
