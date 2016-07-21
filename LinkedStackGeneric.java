@@ -12,7 +12,7 @@ public class LinkedStackGeneric<Type> {
 		Node oldfirst = first;
 		first = new Node();
 		first.item = arg;
-		first = oldfirst;
+		first.next = oldfirst;
 	}
 	public Type pop() {
 		Type obj = first.item;
@@ -20,5 +20,5 @@ public class LinkedStackGeneric<Type> {
 		return obj;
 	}
 }
-/* l'astuce ici est de garder une référence sur le premier élément de la pile
+/* l'astuce ici est de garder une rÃ©fÃ©rence sur le premier Ã©lÃ©ment de la pile
  */
