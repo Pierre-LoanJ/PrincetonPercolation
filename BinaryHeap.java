@@ -1,4 +1,6 @@
 
+// efficient data structure to implement a priority queue which provides a convenient API such as delMax()
+
 public class BinaryHeap {
 	private  int next;
 	private  int[] heap;
