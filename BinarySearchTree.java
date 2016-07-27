@@ -24,12 +24,12 @@ public class BinarySearchTree {
       this.root = new Node(key, val);
     }
     else {
-      while(!= null){
-       if ==
-       else if <  
-       else if >
+      while(n != null) {
+        if      (n.key == key) n.val = val;
+        else if (n.key <  key) n.right = put(n.right, key, val);
+        else if (n.key >  key) n.left = put(n.left, key, val);
       }
-      return n
+      return n;
     }
   }
   public int get(int key) {
