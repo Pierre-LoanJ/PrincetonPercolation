@@ -1,6 +1,7 @@
 /*
 * tree, not obviously perfectly balanced, (this depends on the order keys are inserted)
 * used to implement efficient symbol table data structure
+* we talk about explicit tree data structure as we use node objects to link the data inside the tree
 */
 
 public class BinarySearchTree {
