@@ -1,7 +1,10 @@
 /*
 * efficient data structure to implement a priority queue which provides a convenient API such as delMax()
-*
+* as the tree is only represented by doing arithmetic on array indices, this requires to keep the tree perfectly balanced 
+* (except for the last level which may be incomplete)
+* we talk about implicit tree data structure
 */
+
 public class BinaryHeap {
 	private  int next;
 	private  int[] heap;
