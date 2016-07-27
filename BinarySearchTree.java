@@ -1,3 +1,7 @@
+/*
+* tree data structure, not obviously perfectly balanced, this depends on the order keys are inserted
+*/
+
 public class BinarySearchTree {
   private Node root;
   
@@ -13,8 +17,19 @@ public class BinarySearchTree {
     }
   }
   public void put(int key, int val) {
+    root = put(root, key, val);
+  }
+  private Node put(Node n, char key, int val) {
     if (this.root == null) {
       this.root = new Node(key, val);
+    }
+    else {
+      while(!= null){
+       if ==
+       else if <  
+       else if >
+      }
+      return n
     }
   }
   public int get(int key) {
