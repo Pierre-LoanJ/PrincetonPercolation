@@ -30,7 +30,16 @@ public class BinarySearchTree {
       return n;
     }
   }
-  public int get(int key) {
+  public Integer get(char key) {
+    Node x = root;
+    while (x != null) {
+      if      (x.key == key) return x.val;
+      else if (x.key <  key) x = x.right;
+      else if (x.key >  key) x = x.left;
+    }
+    return null;
+  }
+  public void delete(char key) {
     
   }
   public static void main(String[] args) {
