@@ -2,6 +2,10 @@
 * tree data structure, not obviously perfectly balanced, this depends on the order keys are inserted
 */
 
+/*
+* efficient data structure to implement a priority queue which provides a convenient API such as delMax()
+*
+*/
 public class BinarySearchTree {
   private Node root;
   
