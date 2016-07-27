@@ -1,6 +1,6 @@
 /*
-* tree data structure, not obviously perfectly balanced, this depends on the order keys are inserted
-*
+* tree, not obviously perfectly balanced, (this depends on the order keys are inserted)
+* used to implement efficient symbol table data structure
 */
 
 public class BinarySearchTree {
